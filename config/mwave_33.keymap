@@ -131,7 +131,14 @@
 
         extra1 {
             display-name = "Blue";
-            status = "reserved";
+            bindings = <
+&hm LC(LA(LS(NUMBER_1))) ENTER  &trans                     &trans                     &trans                  &trans                       &trans  &trans         &trans          &trans         &trans         &trans   &trans  &trans  &trans  &trans  &trans  &trans
+&trans                          &trans                     &trans                     &trans                  &trans                       &trans  &trans         &trans          &trans         &trans         &trans   &trans  &trans  &trans
+&kp CAPSLOCK                    &hm LS(HOME) LC(LS(LEFT))  &hm LS(END) LC(LS(RIGHT))  &hm LA(LEFT) LC(PG_UP)  &hm LA(RIGHT) LC(PAGE_DOWN)  &trans  &kp HOME       &kp LC(LEFT)    &kp UP_ARROW   &kp LC(RIGHT)  &kp END  &trans  &trans  &trans  &trans
+&trans                          &mc_linesel                &trans                     &mc_linedel             &trans                       &trans  &kp RIGHT_ALT  &kp LEFT        &kp DOWN       &kp RIGHT      &trans   &trans  &trans  &trans
+&trans                          &trans                     &trans                     &mc_linecopy            &trans                       &trans  &mc_hwpreduce  &mc_hwpenlarge  &mc_hwpnarrow  &mc_hwpwiden   &trans   &trans  &trans  &trans
+&trans                          &trans                     &trans                     &trans                  &kp ENTER                    &trans  &trans         &trans          &trans         &trans         &trans
+            >;
         };
 
         extra2 {
